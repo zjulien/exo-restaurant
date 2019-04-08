@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* a {
+  color: white;
+  text-decoration: none;
+}
+
+font-face {
+  font-family: 'Yeseva One';
+  font-family: 'Lato Regular';
+  font-family: 'Gentium Book Basic';
+  font-family: 'Open Sans';
+}
+
+body header {
+  background-image: url(restaurant_01.jpg);
+  height: 750px;
+}
+
+body header #marge {
+  margin-right: 14%;
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header #marge nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  background-image: url(background_nav.png);
+}
+
+body header #marge nav #logoheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2%;
+  margin-right: 3%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body header #marge nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 600px;
+  color: white;
+  font-family: 'Gentium Book Basic';
+  list-style: none;
+  margin-top: 2%;
+  font-size: 21px;
+}
+
+body header #marge nav #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body header #marge h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Yeseva One';
+  font-size: 90px;
+  margin-left: 8%;
+  margin-top: 10%;
+}
+
+body header #marge #logosoustitre {
+  margin-left: 40%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+body header #marge #menu1 {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-right: 15%;
+  margin-left: 23%;
+}
+
+body header #marge #menu1 #book {
+  background-color: #2f261c;
+  opacity: 0.9;
+  height: 30px;
+  padding-top: 2%;
+  width: 145px;
+}
+
+body header #marge #menu1 #menu {
+  background-color: grey;
+  height: 30px;
+  width: 145px;
+  padding-top: 2%;
+  opacity: 0.7;
+}
+
+body #section1 {
+  background-image: url(NAP.jpg);
+  height: 646px;
+  padding: 70px 10% 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #section1 #assiette {
+  position: relative;
+  left: 46px;
+}
+
+body #section1 p {
+  margin: 0 auto;
+  width: 91%;
+}
+
+body #section1 #colonne1section1 {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 510px;
+  text-align: center;
+}
+
+body #section1 #colonne1section1 #titres2 {
+  color: #cc9900;
+  font-family: 'Yeseva One';
+  font-size: 36px;
+}
+
+body #section2 {
+  background-image: url(section2.jpg);
+  height: 632px;
+  padding-left: 48%;
+  padding-right: 15%;
+  padding-top: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
+  text-align: center;
+}
+
+body #section2 #salade {
+  background-color: rgba(6, 5, 5, 0.6);
+  height: 758px;
+  /* text-align: center; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-right: 9%;
+  padding-left: 9%;
+  position: relative;
+  bottom: 86px;
+  width: 398px;
+  height: 567px;
+  color: white;
+}
+
+body #section2 #salade h2 {
+  font-family: 'Yeseva One';
+  font-size: 36px;
+}
+
+body #section2 #salade p {
+  font-size: 16px;
+  font-family: 'lato regular';
+}
+
+body #section3 {
+  background-image: url(background_bbq.jpg);
+  height: 602px;
+  padding-right: 7%;
+  padding-top: 10%;
+  background-size: cover;
+}
+
+body #section3 #bbq {
+  background-color: rgba(6, 5, 5, 0.6);
+  height: 410px;
+  width: 41%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+body #section3 h2 {
+  font-size: 36px;
+  font-family: 'Yeseva One';
+}
+
+body #section3 img {
+  width: 198px;
+  margin-left: 32%;
+}
+
+body #section3 p {
+  font-size: 16px;
+  font-family: 'lato regular';
+  width: 365px;
+  margin-left: 17%;
+  margin-bottom: 6%;
+}
+
+body #section4 {
+  background-image: url(NAP.jpg);
+  height: 523px;
+  padding-left: 215px;
+  padding-right: 228px;
+  padding-top: 89px;
+  padding-bottom: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #section4 #imagesection4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #section4 #imagesection4 #image2s4 {
+  margin-left: 28px;
+}
+
+body #section4 #formulaire {
+  padding-left: 146px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+body #section4 #formulaire #paragrapheform {
+  font-size: 16px;
+  font-family: "lato regular";
+  margin-top: 8%;
+  width: 92%;
+}
+
+body #section4 #formulaire #titreformulaire {
+  color: #cc9900;
+  font-family: 'Yeseva One';
+  font-size: 36px;
+  margin-bottom: 8%;
+}
+
+body #section4 #formulaire #formulaires {
+  color: #c9a131;
+  font-size: 16px;
+  font-family: "OpenSans Bold";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+body #section4 #formulaire #Names {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #section4 #formulaire #nom {
+  width: 40%;
+}
+
+body #section4 #formulaire #name {
+  width: 117%;
+  height: 80%;
+}
+
+body #section4 #formulaire #e-mail {
+  width: 40%;
+}
+
+body #section4 #formulaire #mail {
+  width: 102%;
+  height: 80%;
+}
+
+body #section4 #formulaire #date {
+  width: 89%;
+  margin-right: 11%;
+  height: 79%;
+}
+
+body #section4 #formulaire #datenombre {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+body #section4 #formulaire #number {
+  width: 114%;
+  height: 61%;
+  margin-left: -10%;
+}
+
+body footer {
+  background-color: black;
+  height: 320px;
+  color: white;
+  padding-left: 214px;
+  padding-right: 285px;
+  padding-top: 54px;
+  padding-bottom: 73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer #colonne1 {
+  margin-right: 17%;
+}
+
+body footer #about {
+  font-family: 'Yeseva_One.';
+  text-align: center;
+}
+
+body footer .divi {
+  margin-top: 7%;
+  margin-bottom: 6%;
+}
+
+body footer #colonne2 {
+  margin-right: 25%;
+  text-align: center;
+}
+
+body footer #favicolonne2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 27%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body footer #colonne3 {
+  margin-right: 25%;
+  text-align: center;
+}
+
+body footer #favicolonne3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 27%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+/*# sourceMappingURL=restaurant.css.map */
