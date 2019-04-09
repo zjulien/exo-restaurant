@@ -2,11 +2,12 @@
 * {
     margin: 0;
     padding: 0;
-    a{
-        color:white;
-    text-decoration:none;
 
-}
+    a {
+        color: white;
+        text-decoration: none;
+
+    }
 }
 
 // //////////////////////POLICE//////////////////////////////////////
@@ -25,162 +26,213 @@ body {
         height: 750px;
 
         #marge {
-            margin-right: 14%;
-            margin-left: 10%;
-            display:flex;
-            flex-direction:column;
-// ////////////////////////////////NAVBAR//////////////////////////////
+            padding-left: 5%;
+            padding-right: 10%;
+            display: flex;
+            flex-direction: column;
+
+            // ////////////////////////////////NAVBAR//////////////////////////////
             nav {
                 display: flex;
-                justify-content: space-between;
-                text-decoration-color:white;
-                background-image:url(background_nav.png);
-                #logoheader{
-                    display:flex;
-                    margin-top:2%;
-                    margin-right:3%;
-                    align-items:flex-start;
-                }    
+                flex-direction: row;
+                justify-content: space-around;
+                text-decoration-color: white;
+                background-image: url(background_nav.png);
+
+
+                #logoheader {
+                    display: flex;
+                    margin-top: 2%;
+                    margin-right: 3%;
+                    align-items: flex-start;
+                }
+
+                #social {
+                    display: flex;
+                    position: relative;
+                    margin-top: 3%;
+                    justify-content: space-between;
+                    color: #dab33e;
+
+                    @media screen and(max-width) {}
+                }
+
+                .fa-facebook {
+                    padding-left: 20%;
+                }
+
+                .fa-youtube {
+                    padding-left: 20%;
+                }
+
                 ul {
                     display: flex;
                     justify-content: space-between;
-                    width:600px;
-                    color:white;
-                   font-family: 'Gentium Book Basic';
-                   list-style:none; 
-                   margin-top:2%;
-                //    margin-right:10%;   
-                   font-size:21px;
-                }
-                #navbar{
-                    display:flex;
-                    align-items:flex-start;
+                    width: 600px;
+                    color: white;
+                    font-family: 'Gentium Book Basic';
+                    list-style: none;
+                    margin-top: 2%;
+                    font-size: 21px;
 
+                    @media screen and (max-width: 980px) {
+                        display: none;
+                    }
+                }
+
+                img {
+                    @media screen and(max-width: 980px) {
+                        height: 139px;
+                    }
                 }
             }
-// //////////////////////////////HEADER/////////////////
+
+            // //////////////////////////////HEADER/////////////////
             h1 {
                 text-align: center;
                 color: white;
                 font-family: 'Yeseva One';
                 font-size: 90px;
-               margin-left:8%;
-               margin-top:10%;
-            //    padding-bottom:16%;
+                margin-top: 4%;
+                width:107%;
+                //    padding-bottom:16%;
             }
-            #logosoustitre{
+
+            #logosoustitre {
                 // width:318px;
-                 margin-left: 40%;
-                 margin-top: 5%;
-                 margin-bottom: 5%;
+                margin-left: 31%;
+                margin-top: 5%;
+                margin-bottom: 5%;
             }
-            #menu1{
-                text-align:center;
-                color:white;
-                display:flex;
-                justify-content:space-evenly;
-                margin-right:15%;
-                margin-left:23%;
-                
-                #book{
-                    background-color:#2f261c;
-                    opacity:0.9;
-                    height:30px;
+
+            #menu1 {
+                text-align: center;
+                color: white;
+                display: flex;
+                justify-content: space-evenly;
+                margin-right: 14%;
+                margin-left: 14%;
+
+                #book {
+                    background-color: #2f261c;
+                    opacity: 0.9;
+                    height: 30px;
                     padding-top: 2%;
                     width: 145px;
                 }
-                #menu{
-                    background-color:grey;
-                    height:30px;
-                    width:145px;
-                    padding-top:2%;
-                    opacity:0.7;
-                }
-                
-            } 
-                        
-                
-        }
-     }
 
-///////////////////////////////////SECTION1////////////////////////////
-     #section1{
-         background-image:url(NAP.jpg);
-         height:646px;
-         padding: 70px 10% 0 10%;
-        display:flex;
-        justify-content: space-around;
-        #assiette{
-           position:relative;
-           left:46px;
+                #menu {
+                    background-color: grey;
+                    height: 30px;
+                    width: 145px;
+                    padding-top: 2%;
+                    opacity: 0.7;
+                }
+
+            }
+
+
         }
-        p{
+    }
+
+    ///////////////////////////////////SECTION1////////////////////////////
+    #section1 {
+        background-image: url(NAP.jpg);
+        height: 646px;
+        padding: 70px 10% 0 10%;
+        display: flex;
+        justify-content: space-around;
+
+        #assiette {
+            position: relative;
+            left: 46px;
+        }
+
+        p {
             margin: 0 auto;
             width: 91%;
         }
-        #colonne1section1{
-            margin-top:2%;
-            display:flex;
-            flex-direction:column;
+
+        #colonne1section1 {
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
             justify-content: space-around;
-            height:510px;
-            text-align:center;
-            #titres2{
-                color:#cc9900;
+            height: 510px;
+            text-align: center;
+
+            #titres2 {
+                color: #cc9900;
                 font-family: 'Yeseva One';
-                font-size:36px;
+                font-size: 36px;
 
             }
-       }
+        }
     }
+
     //////////////////////////////section2///////////////////////////////////
-    #section2{
-        background-image:url(section2.jpg);
-        height:632px;
+    #section2 {
+        background-image: url(section2.jpg);
+        background-attachment: fixed;
+        height: 632px;
         padding-left: 48%;
         padding-right: 15%;
         padding-top: 8%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        color:white;
-        text-align:center;
-        #salade{
-            background-color:rgba(6,5,5,0.6);
-            height:758px;
+        color: white;
+        text-align: center;
+
+        #salade {
+            background-color: rgba(6, 5, 5, 0.6);
+            height: 758px;
             /* text-align: center; */
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             padding-right: 9%;
             padding-left: 9%;
-            position:relative;
-            bottom:86px;
-            width:398px;
-            height:567px;
-            color:white;
+            position: relative;
+            bottom: 86px;
+            width: 398px;
+            height: 567px;
+            color: white;
 
-            h2{
-                font-family:'Yeseva One';
-                font-size:36px;
+            @media screen and(max-width: 980px) {
+                position: relative;
+                right: 81%;
+                width: 137%;
             }
-            p{
-                font-size:16px;
-                font-family:'lato regular';
+            img{ 
+                width:198px;
+                margin-left:22%;
+            }
+            h2 {
+                font-family: 'Yeseva One';
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: 'lato regular';
             }
         }
     }
+
     // //////////////////////SECTION3/////////////////////////////////////
-    #section3{
-        background-image:url(background_bbq.jpg);
-        height:602px;
-        padding-right:7%;
-        padding-top:10%;
-        background-size:cover;
-        #bbq{
-            background-color:rgba(6,5,5,0.6);
-            height:410px;
-            width:41%;
+    #section3 {
+        background-image: url(background_bbq.jpg);
+        background-attachment: fixed;
+        height: 602px;
+        padding-right: 7%;
+        padding-top: 10%;
+        background-size: cover;
+
+        #bbq {
+            background-color: rgba(6, 5, 5, 0.6);
+            height: 410px;
+            width: 52%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -189,148 +241,199 @@ body {
             margin-left: auto;
             margin-right: auto;
             position: relative;
+
+            @media screen and(max-width: 980px) {
+                width: 61%;
+            }
         }
 
-        h2{ 
-            font-size:36px;
-            font-family:'Yeseva One';
+        h2 {
+            font-size: 36px;
+            font-family: 'Yeseva One';
         }
-        img{
-            width:198px;
-            margin-left:32%;
+
+        img {
+            width: 198px;
+            margin-left: 32%;
         }
-        p{
-            font-size:16px;
-            font-family:'lato regular';
-            width:365px;
-            margin-left:17%;
-            margin-bottom:6%;
+
+        p {
+            font-size: 16px;
+            font-family: 'lato regular';
+            width: 365px;
+            margin-left: 17%;
+            margin-bottom: 6%;
         }
     }
+
     /////////////////////////////SECTION4///////////////////////////
-    #section4{
-        background-image:url(NAP.jpg);
-        height:523px;
-        padding-left:215px;
-        padding-right:228px;
-        padding-top:89px;
-        padding-bottom:103px;
+    #section4 {
+        background-image: url(NAP.jpg);
+        height: 523px;
+        padding-left: 215px;
+        padding-right: 228px;
+        padding-top: 89px;
+        padding-bottom: 103px;
         display: flex;
         justify-content: space-around;
-        #imagesection4{
-           display:flex;
-           #image2s4{
-               margin-left:28px;
-           }
+
+        #imagesection4 {
+            display: flex;
             
-        }
-        #formulaire{
-            padding-left:146px;
-            display:flex;
-            flex-direction:column;
-            text-align: center;
-        #paragrapheform{ font-size:16px;
-        font-family:"lato regular";
-        margin-top:8%;
-        width:92%;
-        }
-        #titreformulaire{
-            color:#cc9900;
-            font-family:'Yeseva One';
-            font-size:36px;
-            margin-bottom:8%;
-        }
-        #formulaires{
-        color:#c9a131;
-        font-size:16px;
-        font-family:"OpenSans Bold";
-        display:flex;
-        flex-direction:column;
-        text-align:center;
-        }
-        #Names{
-            margin-top:10%;
-            display:flex;
-            width:100%;
-            justify-content:space-between;
-    
-        }
-        #nom{
-            width:40%;
-        }
-        #name{
-            width:117%;
-            height:80%;
-        }
-        #e-mail{
-            width:40%;
-        }
-        #mail{
-            width:102%;
-            height:80%;
-           
-        }
-        #date{
-           width:89%;
-           margin-right:11%;
-           height:79%;
+
+            #image2s4 {
+                margin-left: 28px;
+
+                @media screen and(max-width: 980px) {
+                    position: relative;
+                    left: 63%;
+                }
+            }
+
+            #image1s4 {
+                @media screen and(max-width: 980px) {
+                    position: relative;
+                    left: 7%;
+                }
+            }
         }
 
-        #datenombre{
-            margin-top:5%;
-            display:flex;
-            justify-content:space-between;
-            width:100%;
-        }
-        #number{
-            width:114%;
-            height:61%;
-            margin-left:-10%;
+            #formulaire {
+                padding-left: 146px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                @media screen and(max-width: 980px) {
+                    // padding-right: 55%;
+                    position: relative;
+                    right: 65%;
+                }
+
+                #paragrapheform {
+                    font-size: 16px;
+                    font-family: "lato regular";
+                    margin-top: 8%;
+                    width: 92%;
+                }
+
+                #titreformulaire {
+                    color: #cc9900;
+                    font-family: 'Yeseva One';
+                    font-size: 36px;
+                    margin-bottom: 8%;
+                }
+
+                #formulaires {
+                    color: #c9a131;
+                    font-size: 16px;
+                    font-family: "OpenSans Bold";
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                #Names {
+                    margin-top: 10%;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+
+                }
+
+                #nom {
+                    width: 40%;
+                }
+
+                #name {
+                    width: 117%;
+                    height: 80%;
+                }
+
+                #e-mail {
+                    width: 40%;
+                }
+
+                #mail {
+                    width: 102%;
+                    height: 80%;
+
+                }
+
+                #date {
+                    width: 89%;
+                    margin-right: 11%;
+                    height: 79%;
+                    
+                }
+
+                #datenombre {
+                    margin-top: 5%;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    @media screen and(max-width: 980px) {
+                        position: relative;
+                        padding-top:5%;
+                        height:54%;}
+                }
+
+                #number {
+                    width: 114%;
+                    height: 61%;
+                    margin-left:-10%;
+                }
+            }
         }
     }
-    }
+
     /////////////////////////FOOTER////////////////////////////////////
-    footer{
-        background-color:black;
-        height:320px;
-        color:white;
-        padding-left:214px;
-        padding-right:285px;
-        padding-top:54px;
-        padding-bottom:73px;
-        display:flex;
-        
-        #colonne1{
-            margin-right:17%;
-            // text-align:center;
-        }
-        
-        #about{
-        font-family:'Yeseva_One.';
-        text-align:center;
-        }
-        .divi{
-            margin-top:7%;
-            margin-bottom:6%;
-        }
-       
-        #colonne2{
-            margin-right:25%;
+    footer {
+        background-color: black;
+        height: 320px;
+        color: white;
+        padding-top: 54px;
+        padding-bottom: 73px;
+        display: flex;
+        justify-content:space-between;
+
+        #colonne1 {
+            width:25%;
+            padding-left:10%;
             text-align:center;
         }
-        #favicolonne2{
+
+        #about {
+            font-family: 'Yeseva_One.';
+            text-align: center;
+        }
+
+        .divi {
+            margin-top: 7%;
+            margin-bottom: 6%;
+        }
+
+        #colonne2 {
+            width: 25%;
+            text-align: center;
+        }
+
+        #favicolonne2 {
             display: flex;
             margin-top: 27%;
             justify-content: space-evenly;
         }
-        #colonne3{
-            margin-right:25%;
-            text-align:center;
+
+        #colonne3 {
+            width: 25%;
+            text-align: center;
+            padding-right:10%;
+           
         }
-        #favicolonne3{
+
+        #favicolonne3 {
             display: flex;
             margin-top: 27%;
             justify-content: space-evenly;
         }
     }
-}

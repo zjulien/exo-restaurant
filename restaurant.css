@@ -21,8 +21,8 @@ body header {
 }
 
 body header #marge {
-  margin-right: 14%;
-  margin-left: 10%;
+  padding-left: 5%;
+  padding-right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,9 +36,12 @@ body header #marge nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-text-decoration-color: white;
           text-decoration-color: white;
   background-image: url(background_nav.png);
@@ -53,6 +56,26 @@ body header #marge nav #logoheader {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+body header #marge nav #social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 3%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #dab33e;
+}
+
+body header #marge nav .fa-facebook {
+  padding-left: 20%;
+}
+
+body header #marge nav .fa-youtube {
+  padding-left: 20%;
 }
 
 body header #marge nav ul {
@@ -70,13 +93,16 @@ body header #marge nav ul {
   font-size: 21px;
 }
 
-body header #marge nav #navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+@media screen and (max-width: 980px) {
+  body header #marge nav ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body header #marge nav img {
+    height: 139px;
+  }
 }
 
 body header #marge h1 {
@@ -84,12 +110,12 @@ body header #marge h1 {
   color: white;
   font-family: 'Yeseva One';
   font-size: 90px;
-  margin-left: 8%;
-  margin-top: 10%;
+  margin-top: 4%;
+  width: 107%;
 }
 
 body header #marge #logosoustitre {
-  margin-left: 40%;
+  margin-left: 31%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -103,8 +129,8 @@ body header #marge #menu1 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-right: 15%;
-  margin-left: 23%;
+  margin-right: 14%;
+  margin-left: 14%;
 }
 
 body header #marge #menu1 #book {
@@ -167,6 +193,7 @@ body #section1 #colonne1section1 #titres2 {
 
 body #section2 {
   background-image: url(section2.jpg);
+  background-attachment: fixed;
   height: 632px;
   padding-left: 48%;
   padding-right: 15%;
@@ -208,6 +235,19 @@ body #section2 #salade {
   color: white;
 }
 
+@media screen and (max-width: 980px) {
+  body #section2 #salade {
+    position: relative;
+    right: 81%;
+    width: 137%;
+  }
+}
+
+body #section2 #salade img {
+  width: 198px;
+  margin-left: 22%;
+}
+
 body #section2 #salade h2 {
   font-family: 'Yeseva One';
   font-size: 36px;
@@ -220,6 +260,7 @@ body #section2 #salade p {
 
 body #section3 {
   background-image: url(background_bbq.jpg);
+  background-attachment: fixed;
   height: 602px;
   padding-right: 7%;
   padding-top: 10%;
@@ -229,7 +270,7 @@ body #section3 {
 body #section3 #bbq {
   background-color: rgba(6, 5, 5, 0.6);
   height: 410px;
-  width: 41%;
+  width: 52%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,6 +286,12 @@ body #section3 #bbq {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+@media screen and (max-width: 980px) {
+  body #section3 #bbq {
+    width: 61%;
+  }
 }
 
 body #section3 h2 {
@@ -289,6 +336,20 @@ body #section4 #imagesection4 #image2s4 {
   margin-left: 28px;
 }
 
+@media screen and (max-width: 980px) {
+  body #section4 #imagesection4 #image2s4 {
+    position: relative;
+    left: 63%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body #section4 #imagesection4 #image1s4 {
+    position: relative;
+    left: 7%;
+  }
+}
+
 body #section4 #formulaire {
   padding-left: 146px;
   display: -webkit-box;
@@ -299,6 +360,13 @@ body #section4 #formulaire {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+  body #section4 #formulaire {
+    position: relative;
+    right: 65%;
+  }
 }
 
 body #section4 #formulaire #paragrapheform {
@@ -375,45 +443,56 @@ body #section4 #formulaire #datenombre {
   width: 100%;
 }
 
+@media screen and (max-width: 980px) {
+  body #section4 #formulaire #datenombre {
+    position: relative;
+    padding-top: 5%;
+    height: 54%;
+  }
+}
+
 body #section4 #formulaire #number {
   width: 114%;
   height: 61%;
   margin-left: -10%;
 }
 
-body footer {
+footer {
   background-color: black;
   height: 320px;
   color: white;
-  padding-left: 214px;
-  padding-right: 285px;
   padding-top: 54px;
   padding-bottom: 73px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-body footer #colonne1 {
-  margin-right: 17%;
+footer #colonne1 {
+  width: 25%;
+  padding-left: 10%;
+  text-align: center;
 }
 
-body footer #about {
+footer #about {
   font-family: 'Yeseva_One.';
   text-align: center;
 }
 
-body footer .divi {
+footer .divi {
   margin-top: 7%;
   margin-bottom: 6%;
 }
 
-body footer #colonne2 {
-  margin-right: 25%;
+footer #colonne2 {
+  width: 25%;
   text-align: center;
 }
 
-body footer #favicolonne2 {
+footer #favicolonne2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,12 +502,13 @@ body footer #favicolonne2 {
           justify-content: space-evenly;
 }
 
-body footer #colonne3 {
-  margin-right: 25%;
+footer #colonne3 {
+  width: 25%;
   text-align: center;
+  padding-right: 10%;
 }
 
-body footer #favicolonne3 {
+footer #favicolonne3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
